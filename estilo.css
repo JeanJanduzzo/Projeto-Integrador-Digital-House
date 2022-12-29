@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "Fontes/ALBA____.TTF";
+
+body {
+    min-width: 372px;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.card {
+    min-height: 40vh;
+}
+

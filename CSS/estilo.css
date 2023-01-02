@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@import "fontes/ALBA____.TTF";
+
+@font-face {
+    font-family: Alba;
+    src: url('ALBA____.TTF') format('truetype');
+}
+
+@media screen and (max-width: 469px) {
+    .mt-xs-3 {
+        margin-top: 1rem;
+    }
+}
+
+body {
+    min-width: 372px;
+}
+
+h1 {
+    font-family: Alba;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+    font-family: Alba;
+    font-size: 36px;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.card {
+    min-height: 40vh;
+}
+
+label:hover .text-secondary {
+    transition: color 0.5s ease;
+    color: #ffff !important;
+}
+
+label .text-secondary {
+    transition: color 0.5s ease;
+}
+
+.btn-check:checked+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary,
+.btn-check:hover+.btn-outline-primary {
+    transition: color 0.5s ease;
+    color: #ffff !important;
+}
+
+.btn-check:checked+.btn-outline-primary .text-secondary,
+.btn-check:active+.btn-outline-primary .text-secondary,
+.btn-check:hover+.btn-outline-primary .text-secondary {
+    transition: color 0.5s ease;
+    color: #ffff !important;
+}
+
+.flex-even {
+    flex: 1;
+    min-width: 300px;
+}
+

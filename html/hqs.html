@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Hq's</title>
+        <link rel="shortcut icon" href="imagens/favecon/fivecon.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- link para a que seja possível utilizar a versão online do Bootstrap 5 - CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <!-- link para a que seja possível utilizar a versão online do Bootstrap Icons - CSS v1.10.0 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <!-- link para o arquivo de estil externo do CSS - estilo.css -->
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <!-- código dos elementos de navegação superior -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Livraria Letrinha</a>
+                    <!-- código do botão de responsividade -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- código do botão dropdown -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Livros
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="romances.html">Romances</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ficcao.html">Ficção</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="biografias.html">Biografias</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- código dos demais botões de navegação -->
+                            <li class="nav-item">
+                                <a class="nav-link active" href="top5.html">Top5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="box.html">Box</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hqs.html">HQ's</a>
+                            </li>
+                        </ul>
+                        <!-- código do campo de busca -->
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-10">
+                                    <form class="justify-content-center my-3">
+                                        <div class="input-group mb-3 mx-5">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="não encontrei meu livro :("
+                                                aria-label="Recipient's username"
+                                                aria-describedby="button-addon2"
+                                            >
+                                            <button class="btn btn-outline-light" type="button" id="button-addon2">Buscar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código dos botões cadastro e entrar -->
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="cadastro.html" class="nav-link text-white">Cadastro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link text-white">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="badge roubded-pill bg-light bi-border-ligth text-primary position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
+                                        <small>1</small>
+                                    </span>
+                                    <a href="carrinho.html" class="nav-link text-white">
+                                        <!-- este <i class=""> se refere ao icone da sacola de compras -->
+                                        <i class="bi-bag fs-.5" style="font-size: 24px; color: #ffff;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- conteúdo da página -->
+            <main class="flex-fill">
+                <div class="container">
+                    <!-- código dos romances -->
+                    <div class="row g-3">
+                        <h1>Hq's</h1>
+                        <!-- código do hq 1 -->
+                        <hr class="mb-1">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/1.jpg" class="card-img-top" alt="Lanterna Verde">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Lanterna Verde</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">Hq de Martin Nodell e Bill Finger</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do hq 2 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/2.jpg" class="card-img-top" alt="Batman">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Batman</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">Bob Kane e Bill Finger</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do hq 3 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/3.jpg" class="card-img-top" alt="Flash">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Flash</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">Robert Kanigher e Catmine Infantino</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do hq 4 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/4.jpg" class="card-img-top" alt="Constantine">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Constantine</h5>
+                                    <br>
+                                    <p class="card-text">Alan Moore, Stephen Bissette e John Totleben</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do hq 5 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/5.jpg" class="card-img-top" alt="Superman">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Superman</h5>
+                                    <br>
+                                    <br>
+                                    <p class="card-text">Joe Shuster e Jerry Siegel</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do hq 6 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <img src="imagens/hq's/6.jpg" class="card-img-top" alt="Homem-aranha">
+                                <div class="card-header">
+                                    R$20,00 reais
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Homem-aranha</h5>
+                                    <br>
+                                    <p class="card-text">Stan Lee e Steve Ditko</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-primary mt-2 d-block">Adicionar a sacola</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-3">
+                    </div>
+                </div>
+            </main>
+            <!-- código dos elementos de rodapé -->
+            <footer class="border-top text-muted bg-light">
+                <div class="container">
+                    <div class="row py-3">
+                        <!-- primeira coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            &copy; 2022 - Livraria Letrinha LTDA
+                            <br>
+                            Rua Imaginária nº0 - Bairro Inexistente - Cidade Nova - SP
+                            <br>
+                            CNPJ; xx.xxx.xxx/xxxx-xx
+                        </div>
+                        <!-- segunda coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="privacidade.html" class="text-decoration-node text-dark">
+                                Política de privacidade
+                            </a>
+                            <br>
+                            <a href="termos.html" class="text-decoration-node text-dark">
+                                Termos de uso
+                            </a>
+                            <br>
+                            <a href="quemsomos.html" class="text-decoration-node text-dark">
+                                Quem somos
+                            </a>
+                            <br>
+                            <a href="trocas.html" class="text-decoration-node text-dark">
+                                Trocas e devoluções
+                            </a>
+                            <br>
+                        </div>
+                        <!-- terceira coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="contato.html" class="text-decoration-node text-dark">
+                                Contato
+                            </a>
+                            <br>
+                            E-mail:
+                            <a href="mailto@dominio.com" class="text-decoration-node text-dark">
+                                email@dominio.com
+                            </a>
+                            <br>
+                            Telefone:
+                            <a href="phone: xx x xxxx xxxx" class="text-decoration-node text-dark">
+                                (xx) x xxxx xxxx
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- link para que seja possível utilizar o Javascript do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

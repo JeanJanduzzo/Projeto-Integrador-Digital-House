@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Livraria Letrinha</title>
+        <link rel="shortcut icon" href="imagens/favecon/fivecon.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- link para a que seja possível utilizar a versão online do Bootstrap 5 - CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <!-- link para a que seja possível utilizar a versão online do Bootstrap Icons - CSS v1.10.0 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <!-- link para o arquivo de estil externo do CSS - estilo.css -->
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <!-- código dos elementos de navegação superior -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary border-bottom shadow-sm mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Livraria Letrinha</a>
+                    <!-- código do botão de responsividade -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- código do botão dropdown -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Livros
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="romances.html">Romances</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ficcao.html">Ficção</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="biografias.html">Biografias</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- código dos demais botões de navegação -->
+                            <li class="nav-item">
+                                <a class="nav-link active" href="top5.html">Top5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="box.html">Box</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hqs.html">HQ's</a>
+                            </li>
+                        </ul>
+                        <!-- código do campo de busca -->
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-10">
+                                    <form class="justify-content-center my-3">
+                                        <div class="input-group mb-3 mx-5">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="não encontrei meu livro :("
+                                                aria-label="Recipient's username"
+                                                aria-describedby="button-addon2"
+                                            >
+                                            <button class="btn btn-outline-light" type="button" id="button-addon2">Buscar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código dos botões cadastro e entrar -->
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="cadastro.html" class="nav-link text-white">Cadastro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link text-white">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="badge roubded-pill bg-light bi-border-ligth text-primary position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
+                                        <small>1</small>
+                                    </span>
+                                    <a href="carrinho.html" class="nav-link text-white">
+                                        <!-- este <i class=""> se refere ao icone da sacola de compras -->
+                                        <i class="bi-bag fs-.5" style="font-size: 24px; color: #ffff;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- código do banner tipo carosel -->
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/carousel/1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/carousel/2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block"></div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <!-- conteúdo da página -->
+            <main class="flex-fill">
+                <!-- Ler antes de morrer -->
+                <div class="container">
+                    <h1>Ler antes de morrer</h1>
+                    <div class="row g-3">
+                        <!-- código do card 1 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/1.jpg" class="card-img-top" alt="Duna">
+                                <div class="card-body">
+                                    <h5 class="card-title">Duna</h5>
+                                    <p class="card-text">O herdeiro da casa Atreides.</p>
+                                    <a href="https://www.youtube.com/watch?v=Vy8hkKkTrLE&list=PLGXaCx6vCa9vvs12hTnH0PrZArVAps4ar&index=6" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do card 2 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/2.jpg" class="card-img-top" alt="O corvo">
+                                <div class="card-body">
+                                    <h5 class="card-title">O corvo</h5>
+                                    <p class="card-text">Uma vista e nunca mais.</p>
+                                    <a href="https://www.youtube.com/watch?v=ltwzkoucn60" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do card 3 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/3.jpg" class="card-img-top" alt="Clube da luta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Clube da luta</h5>
+                                    <p class="card-text">Idealizado por Tyler Durden</p>
+                                    <a href="https://www.youtube.com/watch?v=OLt0s4lhf88" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do card 4 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/4.jpg" class="card-img-top" alt="O cortiço">
+                                <div class="card-body">
+                                    <h5 class="card-title">O cortiço</h5>
+                                    <p class="card-text">Um romance habitado.</p>
+                                    <a href="https://www.youtube.com/watch?v=F2m8WNVP8i0" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do card 5 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/5.jpg" class="card-img-top" alt="Guera e paz">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guerra e paz</h5>
+                                    <p class="card-text">Cinco famílias aristocráticas.</p>
+                                    <a href="https://www.youtube.com/watch?v=uZ1fHezR8p8" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código do card 6 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="imagens/ler antes de morrer/6.jpg" class="card-img-top" alt="Dom Casmurro">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dom Casmurro</h5>
+                                    <p class="card-text">Qual a verdade em Dom Casmurro?</p>
+                                    <a href="https://www.youtube.com/watch?v=cgEDCx6yq10&t=1s" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <!-- código das resenhas -->
+                <div class="container">
+                    <h1>Resenhas</h1>
+                    <div class="row g-3">
+                        <!-- código da resenha 1 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/1.jpg" class="card-img-top" alt="Água para elefantes">
+                                <div class="card-body">
+                                    <h5 class="card-title">A aposta</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="https://www.livrosefuxicos.com/2014/06/resenha-aposta-rachel-van-dyken.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código da resenha 2 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/2.jpg" class="card-img-top" alt="A aposta">
+                                <div class="card-body">
+                                    <h5 class="card-title">8 segundos</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="http://www.livrosefuxicos.com/2015/05/resenha-8-segundos-camila-moreira.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código da resenha 3 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/3.jpg" class="card-img-top" alt="A aposta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adormecida</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="http://www.livrosefuxicos.com/2012/12/resenha-adormecida-anna-sheehan.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código da resenha 4 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/4.jpg" class="card-img-top" alt="A aposta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Apátrida</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="https://www.livrosefuxicos.com/2011/11/resenha-book-tour-selo-brasileiro.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código da resenha 5 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/5.jpg" class="card-img-top" alt="A aposta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Crash</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="https://www.livrosefuxicos.com/2013/04/resenha-crash-nicole-williams.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- código da resenha 6 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card mb-3">
+                                <img src="imagens/Resenhas/6.jpg" class="card-img-top" alt="A aposta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Impulso</h5>
+                                    <p class="card-text">Veja na íntegra.</p>
+                                    <a href="https://www.livrosefuxicos.com/2014/11/resenha-impulso-gisele-souza.html" target="_blank" class="btn btn-primary">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-1">
+                </div>
+            </main>
+            <!-- código dos elementos de rodapé -->
+            <footer class="border-top text-muted bg-light">
+                <div class="container">
+                    <div class="row py-3">
+                        <!-- primeira coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            &copy; 2022 - Livraria Letrinha LTDA
+                            <br>
+                            Rua Imaginária nº0 - Bairro Inexistente - Cidade Nova - SP
+                            <br>
+                            CNPJ; xx.xxx.xxx/xxxx-xx
+                        </div>
+                        <!-- segunda coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="privacidade.html" class="text-decoration-node text-dark">
+                                Política de privacidade
+                            </a>
+                            <br>
+                            <a href="termos.html" class="text-decoration-node text-dark">
+                                Termos de uso
+                            </a>
+                            <br>
+                            <a href="quemsomos.html" class="text-decoration-node text-dark">
+                                Quem somos
+                            </a>
+                            <br>
+                            <a href="trocas.html" class="text-decoration-node text-dark">
+                                Trocas e devoluções
+                            </a>
+                            <br>
+                        </div>
+                        <!-- terceira coluna de elementos -->
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="contato.html" class="text-decoration-node text-dark">
+                                Contato
+                            </a>
+                            <br>
+                            E-mail:
+                            <a href="mailto@dominio.com" class="text-decoration-node text-dark">
+                                email@dominio.com
+                            </a>
+                            <br>
+                            Telefone:
+                            <a href="phone: xx x xxxx xxxx" class="text-decoration-node text-dark">
+                                (xx) x xxxx xxxx
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- link para que seja possível utilizar o Javascript do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

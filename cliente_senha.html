@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <!-- link para o arquivo de estil externo do CSS - estilo.css -->
         <link rel="stylesheet" href="CSS/estilo.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./Script/script.js" defer></script>
     </head>
     <body>
         <div class="d-flex flex-column wrapper">
@@ -149,7 +151,7 @@
                             </a>
                         </div>
                         <div class="col-8">
-                            <form class="col-sm-12 col-md-8 col-lg-6">
+                            <form class="col-sm-12 col-md-8 col-lg-6" onsubmit="alterarSenha()">
                                 <!-- código campo senha atual -->
                                 <div class="form-floating mb-3">
                                     <input
@@ -165,7 +167,7 @@
                                 <div class="form-floating mb-3">
                                     <input
                                         type="password"
-                                        id="txtSenha"
+                                        id="txtSenhaNova"
                                         class="form-control"
                                         placeholder=" "
                                     >
@@ -183,7 +185,7 @@
                                     <label for="txtSenha">Confirme sua nova senha</label>
                                 </div>
                                 <!-- código referetne ao botão -->
-                                <button type="button" onclick="window.location.href='confirmcadastrosenha.html'" class="btn btn-lg btn-primary">Alterar senha</button>
+                                <button type="submit" onclick="window.location.href='confirmcadastrosenha.html'" class="btn btn-lg btn-primary">Alterar senha</button>
                             </form>
                         </div>
                     </div>
